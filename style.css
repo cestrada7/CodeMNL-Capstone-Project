@@ -103,7 +103,18 @@ nav ul li a:hover::after {
 #hero {
   height: calc(100vh - 10vh);
   width: 100%;
-  background: linear-gradient(to right, #f6f6ff, #d8d8d8);
+  /* background: linear-gradient(to right, #f6f6ff, #d8d8d8); */
+  /* background: linear-gradient(to right, #f6f6ff, #d8d8d8),
+    url("images/herobackground.jpg"); */
+  background-image: linear-gradient(
+      to right,
+      rgba(246, 246, 255, 0.8),
+      rgba(216, 216, 216, 0.8)
+    ),
+    url(images/herobg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .container {
   padding: 0 10%;
