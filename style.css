@@ -265,12 +265,16 @@ nav ul li a:hover::after {
 }
 /* --------------END OF WHAT WE OFFFER----------------- */
 /* -----------------HOW ARE WE DOING IT---------------- */
-#news {
+#services {
   margin-top: 8%;
   font-size: 14px;
   letter-spacing: 4px;
   color: #fb7161;
   margin-bottom: 20px;
+}
+.container-service {
+  margin-top: 4%;
+  padding-top: 4%;
 }
 .row {
   display: flex;
@@ -355,9 +359,10 @@ nav ul li a:hover::after {
 }
 /*--------------------ABOUT-----------------------*/
 .container-about {
-  margin-top: 10%;
+  margin-top: 4%;
   text-align: center;
   margin-bottom: 100px;
+  padding-top: 4%;
 }
 .container-about p {
   font-size: 14px;
@@ -373,7 +378,7 @@ nav ul li a:hover::after {
 .container-about .about-p {
   text-align: center;
   margin: 2em auto;
-  max-width: 60%;
+  max-width: 80%;
   line-height: 29px;
   color: #4a4a4a;
   letter-spacing: 0;
@@ -433,6 +438,9 @@ nav ul li a:hover::after {
 }
 .footer-util-2 .footer-util-2-headertext-2 {
   margin-top: 40px;
+}
+.icons {
+  display: none;
 }
 /* -------------------MEDIA QUERY----------------- */
 @media only screen and (max-width: 1300px) {
@@ -554,5 +562,57 @@ nav ul li a:hover::after {
   }
   .footer-util .footer-tel {
     font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .col-footer-sm {
+    width: calc(12 / 12 * 100%);
+  }
+  .footer-util-2 {
+    display: none;
+  }
+  .footer-util {
+    background: #0d0c1f;
+    color: #f5f5ff;
+    text-align: center;
+    padding-bottom: 0;
+  }
+  .footer-util h3 {
+    font-weight: 600;
+    font-size: 18px;
+    margin: 5% auto;
+  }
+  .footer-util p {
+    font-size: 12px;
+    margin: 4px 0;
+    letter-spacing: 3px;
+  }
+  .footer-util .footer-tel {
+    margin: 12px 0;
+    font-size: 12px;
+  }
+  .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .icons ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icons li {
+    margin: 10px 10px 0;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .back-to-top-btn {
+    font-size: 12px;
+  }
+  .footer-util .footer-copy {
+    padding-top: 10px;
   }
 }
